@@ -14,4 +14,9 @@ public class Cargo {
     private Integer id;
     @Column
     private  String descricao;
+
+    @Override
+    public String toString() {
+        return "Cargo: [id="+id+", descrição="+descricao+"]";
+    }
 }
